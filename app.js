@@ -147,7 +147,7 @@ const availabilityCopy={
 };
 let lang=localStorage.getItem('slushy-lang')||'de', active='all', limit=9;
 let availabilityDb=null,selectedCountry=localStorage.getItem('slushy-country')||'DE',availabilityMode=localStorage.getItem('slushy-availability')||'easy';
-const imagePath=id=>`assets/recipes/${id}.webp`;
+const imagePath=id=>`assets/recipes/${id}.webp?v=20260712-3`;
 const yieldFor=r=>r[4][lang];
 const ingredientsFor=r=>r[6][lang];
 const searchableIngredients=r=>[...r[6].de,...r[6].en].join(' ');
