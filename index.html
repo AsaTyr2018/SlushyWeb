@@ -28,7 +28,13 @@
 
   <main id="top">
     <section class="hero">
-      <img src="assets/slushy-hero.webp" alt="Fünf farbenfrohe Slushies und Milkshakes auf Eis">
+      <div class="hero-slides" aria-hidden="true">
+        <img class="hero-slide active" src="assets/slushy-hero.webp" alt="" fetchpriority="high" decoding="async">
+        <img class="hero-slide" src="assets/slushy-hero-fruity.webp" alt="" decoding="async">
+        <img class="hero-slide" src="assets/slushy-hero-creamy.webp" alt="" decoding="async">
+        <img class="hero-slide" src="assets/slushy-hero-indonesia.webp" alt="" decoding="async">
+        <img class="hero-slide" src="assets/slushy-hero-tropical.webp" alt="" decoding="async">
+      </div>
       <div class="hero-shade"></div>
       <div class="hero-content">
         <p class="eyebrow" data-i18n="eyebrow">Eiskalt. Maschinenklar.</p>
@@ -37,6 +43,11 @@
         <a class="primary-btn" href="#recipes"><span data-i18n="discover">Rezepte entdecken</span><span aria-hidden="true">↓</span></a>
       </div>
       <div class="hero-proof"><strong id="recipeCount">26</strong><span data-i18n="testedRecipes">ausgetüftelte Rezepte</span></div>
+      <div class="hero-carousel" aria-label="Hero-Bilder">
+        <button class="hero-arrow hero-prev" type="button" aria-label="Vorheriges Bild" title="Vorheriges Bild">‹</button>
+        <div class="hero-dots" role="group" aria-label="Bild auswählen"></div>
+        <button class="hero-arrow hero-next" type="button" aria-label="Nächstes Bild" title="Nächstes Bild">›</button>
+      </div>
     </section>
 
     <section class="intro" id="recipes">
@@ -73,6 +84,7 @@
   <dialog id="moderatorDialog" class="moderator-dialog"><button class="moderator-close dialog-close icon-btn" aria-label="Schließen" title="Schließen">×</button><div class="moderator-body"><div id="moderatorAuth"></div><div id="moderatorQueue"></div></div></dialog>
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="supabase-config.js"></script>
+  <script src="hero.js"></script>
   <script src="comments.js"></script>
   <script src="app.js"></script>
 </body>
