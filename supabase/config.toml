@@ -1,0 +1,5 @@
+project_id = "slushyweb"
+
+[functions.submit-comment]
+verify_jwt = false
+
