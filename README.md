@@ -1,24 +1,15 @@
 # SlushyWeb
 
-Willkommen bei **SlushyWeb** - der Rezeptesammlung für heiße Tage, kalte Gläser und richtig gute Slushies.
+**SlushyWeb** is a bilingual recipe collection for refreshing slushies, frozen cocktails and creamy milkshakes.
 
-Von fruchtig-frischen Klassikern über cremige Milkshakes bis zu tropischen Rezepten aus Indonesien: SlushyWeb verbindet abwechslungsreiche Ideen mit Rezepturen, die für Slush-Maschinen ausgelegt sind.
+**SlushyWeb** ist eine zweisprachige Rezeptsammlung für erfrischende Slushies, Frozen Cocktails und cremige Milkshakes.
 
-## Rezepte entdecken
+## Open SlushyWeb / SlushyWeb öffnen
 
-Auf [SlushyWeb](https://asatyr2018.github.io/SlushyWeb/) findest du:
+### [https://asatyr2018.github.io/SlushyWeb/](https://asatyr2018.github.io/SlushyWeb/)
 
-- fruchtige Slushies und alkoholfreie Frozen Cocktails
-- klassische, vegane und außergewöhnliche Milkshakes
-- Zutaten und Zubereitung auf Deutsch und Englisch
-- Geschmacksprofile für Süße, Säure und Cremigkeit
-- Hinweise zu Allergenen, Kühlkette und Maschineneignung
-- einen Länderfilter für die realistische Zutatenverfügbarkeit
+Choose your language / Sprache auswählen:
 
-## Was passt zu dir?
+- [Deutsch](README-DE.md)
+- [English](README-EN.md)
 
-Nutze Suche und Kategorien, wähle dein Land und entscheide, ob auch Spezialgeschäfte oder seltene Zutaten berücksichtigt werden sollen. So zeigt dir SlushyWeb die Rezepte, die sich mit den verfügbaren Zutaten am besten umsetzen lassen.
-
-Alle Verfügbarkeitsangaben sind Orientierungshilfen. Produktangebote, Rezepturen, Einfuhrregeln und mögliche Allergenspuren können sich ändern. Prüfe bei Allergien immer die Angaben auf der Verpackung der tatsächlich verwendeten Produkte.
-
-Viel Freude beim Mixen, Kühlen und Genießen.
