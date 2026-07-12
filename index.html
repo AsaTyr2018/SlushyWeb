@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="SlushyWeb - maschinentaugliche Slush- und Milkshake-Rezepte.">
+  <title>SlushyWeb | Rezepte, die laufen</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Paytone+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="SlushyWeb Startseite"><span class="brand-drop">S</span><span>SlushyWeb</span></a>
+    <nav aria-label="Hauptnavigation">
+      <a href="#recipes" data-i18n="navRecipes">Rezepte</a>
+      <a href="#guide" data-i18n="navGuide">Slush 101</a>
+      <a href="#about" data-i18n="navAbout">Über uns</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" id="searchFocus" aria-label="Suche öffnen" title="Suche öffnen">
+        <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>
+      </button>
+      <div class="language-switch" aria-label="Sprache"><button class="active" data-lang="de">DE</button><button data-lang="en">EN</button></div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <img src="assets/slushy-hero.webp" alt="Fünf farbenfrohe Slushies und Milkshakes auf Eis">
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow" data-i18n="eyebrow">Eiskalt. Maschinenklar.</p>
+        <h1>SlushyWeb</h1>
+        <p data-i18n="heroText">Rezepte, die nicht nur gut aussehen, sondern in deiner Slush-Maschine auch wirklich funktionieren.</p>
+        <a class="primary-btn" href="#recipes"><span data-i18n="discover">Rezepte entdecken</span><span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="hero-proof"><strong id="recipeCount">26</strong><span data-i18n="testedRecipes">ausgetüftelte Rezepte</span></div>
+    </section>
+
+    <section class="intro" id="recipes">
+      <div><p class="eyebrow dark" data-i18n="collection">Die Sammlung</p><h2 data-i18n="findFavorite">Finde deinen neuen Favoriten.</h2></div>
+      <p data-i18n="introText">Fruchtig, cremig, vegan oder als alkoholfreier Cocktail. Alle Mischungen sind auf Textur, Zucker und sauberes Zapfen abgestimmt.</p>
+    </section>
+
+    <section class="recipe-tools" aria-label="Rezepte filtern">
+      <label class="search-box"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg><input id="search" type="search" data-placeholder-de="Nach Zutat oder Rezept suchen..." data-placeholder-en="Search by ingredient or recipe..." placeholder="Nach Zutat oder Rezept suchen..."></label>
+      <div class="filters" id="filters"></div>
+    </section>
+    <section class="availability-tools" aria-label="Verfügbarkeit nach Land">
+      <div class="country-control"><label for="country" data-i18n="countryLabel">Land</label><select id="country"></select></div>
+      <div class="availability-modes" id="availabilityModes" aria-label="Verfügbarkeitsstufe"></div>
+      <p id="availabilitySummary"></p>
+    </section>
+
+    <section class="recipe-grid" id="recipeGrid" aria-live="polite"></section>
+    <button class="load-more" id="loadMore"><span data-i18n="showMore">Mehr Rezepte zeigen</span><span aria-hidden="true">＋</span></button>
+
+    <section class="guide" id="guide">
+      <div class="guide-copy"><p class="eyebrow dark" data-i18n="knowHow">Slush 101</p><h2 data-i18n="physicsTitle">Ein bisschen Physik. Viel besserer Slush.</h2><p data-i18n="physicsText">Zucker, Temperatur und feine Partikel entscheiden, ob dein Drink cremig zapft oder am Zylinder festfriert.</p></div>
+      <div class="guide-facts">
+        <article><strong>13–15 °Bx</strong><span data-i18n="factBrix">idealer Bereich für Frucht-Slush</span></article>
+        <article><strong>2–6 °C</strong><span data-i18n="factTemp">Vorkühltemperatur</span></article>
+        <article><strong>30–90 min</strong><span data-i18n="factTime">typische Laufzeit</span></article>
+      </div>
+    </section>
+  </main>
+
+  <footer id="about"><a class="brand inverse" href="#top"><span class="brand-drop">S</span><span>SlushyWeb</span></a><p data-i18n="footerText">Maschinentaugliche Rezepte für richtig gute Eisgetränke.</p><p>© 2026 SlushyWeb</p></footer>
+
+  <dialog id="recipeDialog"><button class="dialog-close icon-btn" aria-label="Schließen" title="Schließen">×</button><div id="dialogContent"></div></dialog>
+  <script src="app.js"></script>
+</body>
+</html>

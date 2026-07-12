@@ -1,0 +1,6 @@
+# Local development and generated source caches
+.DS_Store
+Thumbs.db
+*.log
+node_modules/
+tmp/
